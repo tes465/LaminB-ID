@@ -53,9 +53,11 @@ of assigning normal or abnormal phenotypes to cell. Further, the script can be u
 complex quantification and phenotyping methods, so that findings from different research groups can be compared.
 
 ## **Installation**
-
+Currently the only method to install this script is to go to [LaminB_phenotyping.py](link.ca) and download the file.\
+Check back later for instructions to install this package from the command line in a terminal.
 
 ## **Usage**
+Check back later for more detailed usage instructions.\
 How to use with examples\
 include options (-help)
 + How to prepare for script usage
