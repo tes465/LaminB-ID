@@ -9,14 +9,14 @@ the [3D ImageJ suite](https://mcib3d.frama.io/3d-suite-imagej) plugin to quantit
 and four abnormal phenotypes (punctate, incomplete, invagination, and folded) of Lamin B staining.
 
 ## **Table of Contents**
-+ [Description](https://github.com/tes465/renamedtest/blob/main/README.md#description)
-+ [Installation](https://github.com/tes465/renamedtest/blob/main/README.md#installation)
-+ [Usage](https://github.com/tes465/renamedtest/blob/main/README.md#usage)
-+ [Support](https://github.com/tes465/renamedtest/blob/main/README.md#support)
-+ [Future Projects](https://github.com/tes465/renamedtest/blob/main/README.md#future-projects)
-+ [How to Contribute](https://github.com/tes465/renamedtest/blob/main/README.md#how-to-contribute)
-+ [Acknowledgments](https://github.com/tes465/renamedtest/blob/main/README.md#acknowledgements)
-+ [License](https://github.com/tes465/renamedtest/blob/main/README.md#license)
++ [Description](https://github.com/tes465/LaminB-ID#description)
++ [Installation](https://github.com/tes465/LaminB-ID#installation)
++ [Usage](https://github.com/tes465/LaminB-ID#usage)
++ [Support](https://github.com/tes465/LaminB-ID#support)
++ [Future Projects](https://github.com/tes465/LaminB-ID#future-projects)
++ [How to Contribute](https://github.com/tes465/LaminB-ID#how-to-contribute)
++ [Acknowledgments](https://github.com/tes465/LaminB-ID#acknowledgements)
++ [License](https://github.com/tes465/LaminB-ID#license)
 
 ## **Description**
 The 3D ImageJ suite is necessary to download and install in ImageJ before the script from this project\
