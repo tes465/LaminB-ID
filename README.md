@@ -101,4 +101,4 @@ and Michael Levin and Hannah Salapa for their support with the research.
 
 
 ## **License**
-Link to the license type
+This work is protected under the [GNU public](https://github.com/tes465/LaminB-ID/blob/main/LICENSE) license.
