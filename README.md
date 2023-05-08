@@ -58,15 +58,38 @@ The recommended option is to use `$ pip install LaminB-ID` at the computer's com
 The other option is to download the package under the releases tab.
 
 ## **Usage**
-Check back later for more detailed usage instructions.\
-How to use with examples\
-include options (-help)
-+ How to prepare for script usage
-    + Install the computer code (can add link to installation section)
-    + Download the 3D ImageJ suite plugin (add link)
+1. How to prepare for script usage
+    + Install the computer code (see previous section)
+    + Download the [3D ImageJ suite plugin](https://mcib3d.frama.io/3d-suite-imagej)
     + Process 3D images of Lamin B staining. Quantify the staining and save the results in a supported\
-      file format (.csv or .txt). Specifically the 
-    +
+      file format (.csv or .txt). Columns should be separated by commas (.csv file) or tabs (.txt file)
+    + The first column should be contain headers (the title of the columns) worded exactly as from the\
+      the ImageJ 3D plugin 3D measurements. The column names are hard written into the code and if worded\
+      slightly different will result in errors. This is a common area to check if the script does not work\
+      as expected
+    + At minimum, the '3D Moments,' 'Ellipse Flatness,' and the 'Number of Objects' measurements need to be saved.
+2. How to invoke/use the script
+    + At the computer's command line use `$ LaminB_Phenotyping.py [OPTIONS]`
+    + The only current option is -help for a short description to use the code
+    + There is a choice to use the code with three arguements or with none. If no arguments are used, the\
+      code will prompt the user for the first file name to establish the thresholds for phenotyping. (this\
+      should be the control treatment, the next prompt is to enter the delimiter of the file (a comma, space\
+      or tab). The final prompt is for the second file name, which is expected to be the experimental treatment\
+      file.
+    + The code can also be used to with the files and delimiter given as arguements when invoking the code.
+        + The first argument is the file to establish the measurement thresholds (likely the control file)
+        + The second arguement is the delimiter of the file (comma, space or tab)
+        + The third argument is the second file to phenotype, likely the experimental treatment data
+    + In order for the script to access the files, the current directory must contain the two files.
+        + The first option is to save the files in the root(Home) directory
+        + The second option is to change the current directory to the directory where the files are saved.\
+          This is done by used the cd command. For example, on a Mac if the files are saved in the documents\
+          folder use `$ cd Documents/` to change the current directory to Documents. Once the current directory\
+          contains the two files, the script can be used properly.
+3. Examples
+    + Without arguments:
+      ```
+      $ LaminB_Phenotyping.py 
 
 ## **Support**
 The first place to go to for support is the accompanying [paper](https://www.tandfonline.com/journals/kncl20),\
