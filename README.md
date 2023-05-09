@@ -94,8 +94,61 @@ The LaminB_Phenotyping.py file contains the computer script and is the file that
 4. Examples
     + Without arguments:
       ```
-      $ LaminB_Phenotyping.py 
-
+      $ ./LaminB_Phenotyping.py 
+      Please enter the full name of the file to open including the format (.csv or .txt): controldata.csv
+      Please enter the delimiter of the file (tab key, space key, or ','): ,
+      Control group totals: 
+      Ring, count: x
+      Diffuse, count: x
+      Punctate, count: x
+      Incomplete, count: x
+      Invagination, count: x
+      Folded, count: x
+      The percent of cells with abnormal staining is: x.xx
+      
+      Please enter the full name of the siRNA treatment file to open including the format (.csv or .txt): treatmentdata.csv
+      Treatment group totals: 
+      Ring, count: x
+      Diffuse, count: x
+      Punctate, count: x
+      Incomplete, count: x
+      Invagination, count: x
+      Folded, count: x
+      The percent of cells with abnormal staining is: x.xx
+      ```
+    + With three arguments
+      ```
+      $ ./LaminB_Phenotyping.py controldata.csv , treatmentdata.csv
+      Control group totals:
+      Ring, count: x
+      Diffuse, count: x
+      Punctate, count: x
+      Incomplete, count: x
+      Invagination, count: x
+      Folded, count: x
+      The percent of cells with abnormal staining is: x.xx
+      
+      Treatment group totals:
+      Ring, count: x
+      Diffuse, count: x
+      Punctate, count: x
+      Incomplete, count: x
+      Invagination, count: x
+      Folded, count: x
+      The percent of cells with abnormal staining is: x.xx
+      ```
+5. Important Points
+    + Any combination of 0, 1, 2, or 3 arguments can be used when invoking the command.\
+      The order of the arguements must always be control file, delimiter, experimental file\
+      and any arguments not given will be prompted.\
+      For example if only 1 argument is given, the user will not be prompted for the first file name,\
+      but will be prompted for the delimiter and the second file.
+    + Entering file names when prompted need to entered exactly as written including spaces and capitalization
+    + If entering the file names as arguements spaces needed an escape character before the space
+      For example the file 'control data.csv' has to be written as `control\ data.csv`
+      The tab key can be used to autofill parts or all of the file name depending if other files\
+      contain the characters after the tab key is used.
+      
 ## **Support**
 The first place to go to for support is the accompanying [paper](https://www.tandfonline.com/journals/kncl20),\
 which includes this project. The methods section of the paper includes how the data was obtained for use in the\
