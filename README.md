@@ -144,7 +144,7 @@ The LaminB_Phenotyping.py file contains the computer script and is the file that
       For example if only 1 argument is given, the user will not be prompted for the first file name,\
       but will be prompted for the delimiter and the second file.
     + Entering file names when prompted need to entered exactly as written including spaces and capitalization
-    + If entering the file names as arguements spaces needed an escape character before the space
+    + If entering the file names as arguements, spaces need an escape character before the space
       For example the file 'control data.csv' has to be written as `control\ data.csv`
       The tab key can be used to autofill parts or all of the file name depending if other files\
       contain the characters after the tab key is used.
