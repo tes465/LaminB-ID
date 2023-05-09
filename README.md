@@ -53,12 +53,11 @@ of assigning normal or abnormal phenotypes to cell. Further, the script can be u
 complex quantification and phenotyping methods, so that findings from different research groups can be compared.
 
 ## **Installation**
-There are two options to install this package.\
-The recommended option is to use `$ pip install LaminB-ID` at the computer's command line.\
-The other option is to download the package under the releases tab.
+To download this computer code, click on the releases tab to the right and download the compressed files.\
+The LaminB_Phenotyping.py file contains the computer script and is the file that will be used in the next steps.
 
 ## **Usage**
-1. How to prepare for script usage
+1. How to prepare files for script usage
     + Install the computer code (see previous section)
     + Download the [3D ImageJ suite plugin](https://mcib3d.frama.io/3d-suite-imagej)
     + Process 3D images of Lamin B staining. Quantify the staining and save the results in a supported\
@@ -68,8 +67,14 @@ The other option is to download the package under the releases tab.
       slightly different will result in errors. This is a common area to check if the script does not work\
       as expected
     + At minimum, the '3D Moments,' 'Ellipse Flatness,' and the 'Number of Objects' measurements need to be saved.
-2. How to invoke/use the script
-    + At the computer's command line use `$ LaminB_Phenotyping.py [OPTIONS]`
+2. How to prepare the computer for script usage
+    + Make sure that python is downloaded and able to be used at the command line
+    + `$ python --version` will return the version of python downloaded on the computer
+    + If this command returns an error, python will needed to be downloaded for [mac](https://www.python.org/downloads/macos/) or [windows](https://www.python.org/downloads/windows/)
+    + After downloading the file permission to run the script must be given, this is accomplished by the command\
+      `$ chmod 764 LaminB_Phenotyping.py`
+3. How to invoke/use the script
+    + At the computer's command line use `$ ./LaminB_Phenotyping.py [OPTIONS]`
     + The only current option is -help for a short description to use the code
     + There is a choice to use the code with three arguements or with none. If no arguments are used, the\
       code will prompt the user for the first file name to establish the thresholds for phenotyping. (this\
@@ -80,13 +85,13 @@ The other option is to download the package under the releases tab.
         + The first argument is the file to establish the measurement thresholds (likely the control file)
         + The second arguement is the delimiter of the file (comma, space or tab)
         + The third argument is the second file to phenotype, likely the experimental treatment data
-    + In order for the script to access the files, the current directory must contain the two files.
+    + In order for the script to access the files, the current directory must contain the two files and the python file.
         + The first option is to save the files in the root(Home) directory
         + The second option is to change the current directory to the directory where the files are saved.\
           This is done by used the cd command. For example, on a Mac if the files are saved in the documents\
           folder use `$ cd Documents/` to change the current directory to Documents. Once the current directory\
           contains the two files, the script can be used properly.
-3. Examples
+4. Examples
     + Without arguments:
       ```
       $ LaminB_Phenotyping.py 
