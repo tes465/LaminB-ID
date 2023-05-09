@@ -33,7 +33,7 @@ else:
             while Separator != "\t" and Separator != " " and Separator != ",":
                 print("This script only allows the three above delimiters, "
                       "enter a valid delimiter or change the file format")
-                Separator = input("Please enter the delimiter of the file ('tab', space, or ',': ) ")
+                Separator = input("Please enter the delimiter of the file ('tab', space, or ','): ")
         else:
             Separator = sys.argv[2]
 
@@ -231,7 +231,7 @@ FileWrite.close()
 # Add code to prompt for second file (siRNA Treatment file), put values of interest in 
 # new lists with siA1 suffix. File can be assigned to the initial (same) variable since
 # the original file is no longer needed
-if len(sys.argv) == 3:
+if len(sys.argv) <= 3:
     siA1File = input("Please enter the full name of the siRNA treatment file to open including the format (.csv or .txt): ")
 else:
     siA1File = sys.argv[3]
