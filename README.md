@@ -71,8 +71,8 @@ The LaminB_Phenotyping.py file contains the computer script and is the file that
     + Make sure that python is downloaded and able to be used at the command line
     + `$ python --version` will return the version of python downloaded on the computer
     + If this command returns an error, python will needed to be downloaded for [mac](https://www.python.org/downloads/macos/) or [windows](https://www.python.org/downloads/windows/)
-    + After downloading the file permission to run the script must be given, this is accomplished by the command\
-      `$ chmod 764 LaminB_Phenotyping.py`
+    + After downloading the file permission to run the script must be given, this is accomplished by the\
+      command `$ chmod 764 LaminB_Phenotyping.py`
 3. How to invoke/use the script
     + At the computer's command line use `$ ./LaminB_Phenotyping.py [OPTIONS]`
     + The only current option is -help for a short description to use the code
