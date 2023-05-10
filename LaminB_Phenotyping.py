@@ -15,10 +15,10 @@ The code is expected to handle common errors gracefully.
 
 if len(sys.argv) == 1:
     File = input("Please enter the full name of the file to open including the format (.csv or .txt): ")
-    Separator = input("Please enter the delimiter of the file (tab key, space key, or ',': ) ")
+    Separator = input("Please enter the delimiter of the file (tab key, space key, or ','): ")
     while Separator != "\t" and Separator != " " and Separator != ",":
         print("This script only allows the three above delimiters, enter a valid delimiter or change the file format")
-        Separator = input("Please enter the delimiter of the file ('tab', space, or ',': ) ")
+        Separator = input("Please enter the delimiter of the file ('tab', space, or ','): ")
 
 # File = "LaminBTestMeasures_ExcelBlanks.csv"
 # Separator = ","
@@ -29,7 +29,7 @@ else:
     else:
         File = sys.argv[1]
         if len(sys.argv) == 2:
-            Separator = input("Please enter the delimiter of the file (tab, space, or ',': ) ")
+            Separator = input("Please enter the delimiter of the file (tab, space, or ','): ")
             while Separator != "\t" and Separator != " " and Separator != ",":
                 print("This script only allows the three above delimiters, "
                       "enter a valid delimiter or change the file format")
