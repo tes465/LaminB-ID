@@ -81,7 +81,7 @@ The LaminB_Phenotyping.py file contains the computer script and is the file that
       should be the control treatment, the next prompt is to enter the delimiter of the file (a comma, space\
       or tab). The final prompt is for the second file name, which is expected to be the experimental treatment\
       file.
-    + The code can also be used to with the files and delimiter given as arguements when invoking the code.
+    + The code can also be used with the files and delimiter given as arguements when invoking the code.
         + The first argument is the file to establish the measurement thresholds (likely the control file)
         + The second arguement is the delimiter of the file (comma, space or tab)
         + The third argument is the second file to phenotype, likely the experimental treatment data
