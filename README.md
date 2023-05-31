@@ -58,7 +58,7 @@ The LaminB_Phenotyping.py file contains the computer script and is the file that
 
 ## **Usage**
 1. How to prepare files for script usage
-    + Install the computer code (see previous section)
+    + Download the python script onto your computer (see previous section)
     + Download the [3D ImageJ suite plugin](https://mcib3d.frama.io/3d-suite-imagej)
     + Process 3D images of Lamin B staining. Quantify the staining and save the results in a supported\
       file format (.csv or .txt). Columns should be separated by commas (.csv file) or tabs (.txt file)
@@ -69,7 +69,7 @@ The LaminB_Phenotyping.py file contains the computer script and is the file that
     + At minimum, the '3D Moments,' 'Ellipse Flatness,' and the 'Number of Objects' measurements need to be saved.
 2. How to prepare the computer for script usage
     + Make sure that python is downloaded and able to be used at the command line
-    + `$ python --version` will return the version of python downloaded on the computer
+    + `$ python --version` or `$ python3 --version` will return the version of python downloaded on the computer
     + If this command returns an error, python will needed to be downloaded for [mac](https://www.python.org/downloads/macos/) or [windows](https://www.python.org/downloads/windows/)
     + After downloading the file, permission to run the script must be given, this is accomplished by the\
       command `$ chmod 764 LaminB_Phenotyping.py`
@@ -148,6 +148,21 @@ The LaminB_Phenotyping.py file contains the computer script and is the file that
       For example the file 'control data.csv' has to be written as `control\ data.csv`
       The tab key can be used to autofill parts or all of the file name depending if other files\
       contain the characters after the tab key is used.
+      
+ 6. Troubleshooting
+     + If the script is unable to run at all, ensure that the first line of the\
+       LaminB_Phenotyping.py file contains the correct path to where python or python3\
+       is downloaded on the computer. This may need to be changed.
+     + If the script runs, but does not correctly process the files, ensure that the file\
+       contains correctly named headers. The necessary 3D measurements for the script are:\
+       Ellipse Flatness, Moment 2 and 3, and Number of Objects. They should be recorded in\
+       the .csv file as 'Ell_Flatness', 'Moment 2', 'Moment 3', and 'NbObjects' including\
+       the capitalization, spaces, and underscore.
+     + If no cells in the first (control) file do not have a folded or invagination (internal\
+       staining) phenotype, a message will print stating this and the implications. However,\
+       the results are still accurate and valid.
+     + If other issues with the script arise, please create an issue report or a pull request\
+       to fix the code.
       
 ## **Support**
 The first place to go to for support is the accompanying [paper](https://www.tandfonline.com/journals/kncl20),\
